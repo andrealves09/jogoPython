@@ -25,7 +25,7 @@ sun_img = pygame.transform.scale(sun_img, (tile_size, tile_size))
 bg_img = pygame.image.load('img/sky.png')
 bg_img = pygame.transform.scale(bg_img, (screen_width, screen_height - margin))
 dirt_img = pygame.image.load('img/dirt.png')
-grass_img = pygame.image.load('img/grass.png')
+pedra_img = pygame.image.load('img/pedra.png')
 blob_img = pygame.image.load('img/blob.png')
 platform_x_img = pygame.image.load('img/platform_x.png')
 platform_y_img = pygame.image.load('img/platform_y.png')
@@ -38,7 +38,7 @@ load_img = pygame.image.load('img/load_btn.png')
 
 #define game variables
 clicked = False
-level = 2
+level = 1
 
 #define colours
 white = (255, 255, 255)
@@ -82,7 +82,7 @@ def draw_world():
 					screen.blit(img, (col * tile_size, row * tile_size))
 				if world_data[row][col] == 2:
 					#grass blocks
-					img = pygame.transform.scale(grass_img, (tile_size, tile_size))
+					img = pygame.transform.scale(pedra_img, (tile_size, tile_size))
 					screen.blit(img, (col * tile_size, row * tile_size))
 				if world_data[row][col] == 3:
 					#enemy blocks

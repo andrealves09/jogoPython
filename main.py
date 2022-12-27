@@ -22,7 +22,7 @@ screen_width = variaveis.screen_width
 screen_height = variaveis.screen_height
 screen = variaveis.screen
 tile_size= variaveis.tile_size
-pygame.display.set_caption('Platformer')
+pygame.display.set_caption('Joint Journey')
 
 #define font
 font = pygame.font.SysFont('Bauhaus 93', 50)
